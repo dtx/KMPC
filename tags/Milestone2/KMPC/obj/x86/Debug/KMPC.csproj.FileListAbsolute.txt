@@ -1,0 +1,16 @@
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\bin\Debug\KMPC.exe
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\bin\Debug\KMPC.pdb
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.dll
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\bin\Debug\Microsoft.Samples.Kinect.WpfViewers.pdb
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\MainWindow.baml
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\App.g.cs
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC_MarkupCompile.cache
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC.g.resources
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC.Form1.resources
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC.Properties.Resources.resources
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC.exe
+C:\Users\Sandeep\Documents\Kinect\KMPC\KMPC\trunk\KMPC\obj\x86\Debug\KMPC.pdb

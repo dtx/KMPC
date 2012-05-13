@@ -1,0 +1,24 @@
+<item>
+  <player>
+    <class_name>WMP Skin Host</class_name>
+    <play>Control + P</play>
+    <stop>Control + S</stop>
+    <full>F11</full>
+    <fwd>Control + F</fwd>
+    <bwd>Control + B</bwd>
+    <mute>F7</mute>
+    <vup>F9</vup>
+    <vdown>F8</vdown>
+  </player>
+  <player>
+    <class_name>iTunes</class_name>
+    <play>Space</play>
+    <stop>Space</stop>
+    <full>Control + T</full>
+    <fwd>Control + Right</fwd>
+    <bwd>Control + Left</bwd>
+    <mute>Control + Alt + Down</mute>
+    <vup>Control + Up</vup>
+    <vdown>Control + Down</vdown>
+  </player>
+</item>

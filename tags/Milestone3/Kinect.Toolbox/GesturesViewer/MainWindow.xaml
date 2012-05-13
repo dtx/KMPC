@@ -1,0 +1,115 @@
+﻿<Window x:Class="GesturesViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        WindowState="Maximized"
+        Title="Gestures Viewer" Height="567" Width="1349">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Foreground" Value="#FF999999"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.RowSpan="6">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#FFCECECE" Offset="0"></GradientStop>
+                    <GradientStop Color="#FFDEDEDE" Offset="0.8"></GradientStop>
+                    <GradientStop Color="White" Offset="1"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Viewbox Margin="5" Grid.RowSpan="5">
+            <Grid Width="640" Height="480" ClipToBounds="True">
+                <Image x:Name="kinectDisplay" Source="{Binding Bitmap}"></Image>
+                <Canvas x:Name="kinectCanvas"></Canvas>
+                <Canvas x:Name="gesturesCanvas"></Canvas>
+                <Rectangle Stroke="Black" StrokeThickness="1"/>
+            </Grid>
+        </Viewbox>
+        <TextBlock x:Name="currentPosture" Margin="5, 15" Grid.RowSpan="5" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White"/>
+        <TextBlock Text="TEMPLATES" Grid.Column="1" Margin="4"/>
+        <Grid Margin="10" Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="templates">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding DisplayBitmap}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <ListBox x:Name="postures" Grid.Row="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding DisplayBitmap}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <TextBlock Text="DETECTED GESTURES" Grid.Column="1" Grid.Row="2" Margin="4"/>
+        <ListBox x:Name="detectedGestures" FontSize="20" Grid.Column="1" Margin="10" Grid.Row="3">
+        </ListBox>
+        <StackPanel Grid.Row="5" Margin="166,36,84,31" HorizontalAlignment="Center" VerticalAlignment="Center" Height="83" Width="827">
+            <Rectangle x:Name="audioBeamAngle" Height="20" Width="300" Margin="5">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1, 0">
+                        <GradientStopCollection>
+                            <GradientStop Offset="0" Color="Black"/>
+                            <GradientStop Offset="{Binding BeamAngle}" Color="Orange"/>
+                            <GradientStop Offset="1" Color="Black"/>
+                        </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel Orientation="Horizontal" >
+                <Button Content="Record" x:Name="recordOption" Click="recordOption_Click" Margin="5" VerticalAlignment="Center" Height="30" Width="115" />
+                <CheckBox Content="Audio Control" x:Name="audioControl" VerticalAlignment="Center"/>
+                <Button Content="Replay" x:Name="replayButton" Click="replayButton_Click" Margin="5" VerticalAlignment="Center" Height="33" Width="85" />
+                <Button Content="Capture Circle" x:Name="recordCircle" Click="recordCircle_Click" Margin="5" VerticalAlignment="Center" Height="37" Width="149" />
+                <Button Content="Capture T" x:Name="recordT" Click="recordT_Click" Margin="5" VerticalAlignment="Center" Height="39" Width="104" />
+                <Button Content="Test Gestures" Height="36" Name="button1" Width="151" Click="button1_Click" />
+            </StackPanel>
+        </StackPanel>
+        <TextBlock Text="STABILITIES" Grid.Column="1" Grid.Row="4" Margin="4"/>
+        <ListBox x:Name="stabilitiesList" FontSize="20" Grid.Column="1" Grid.Row="5" Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Key}"/>
+                        <TextBlock Text=": "/>
+                        <TextBlock Text="{Binding Value}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Slider Minimum="{Binding ElevationMinimum}" Maximum="{Binding ElevationMaximum}" Value="{Binding ElevationAngle, Mode=TwoWay}" x:Name="elevationSlider" Orientation="Vertical" Grid.RowSpan="5"/>
+        <Button Grid.RowSpan="5" Content="View Depth" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" x:Name="viewButton"/>
+    </Grid>
+</Window>

@@ -1,0 +1,51 @@
+<item>
+  <player>
+    <class_name>Winamp v1.x</class_name>
+    <play>Space</play>
+    <stop>Control + Space</stop>
+    <full>Return</full>
+    <fwd>Right</fwd>
+    <bwd>Left</bwd>
+    <mute>M</mute>
+    <vup>Up</vup>
+    <vdown>Down</vdown>
+  </player>
+  <player>
+    <class_name>WMP Skin Host</class_name>
+    <play>Control + P</play>
+    <stop>Control + S</stop>
+    <full>Alt + Return</full>
+    <fwd>Shift + Control + F</fwd>
+    <bwd>Shift + Control + B</bwd>
+    <mute>F7</mute>
+    <vup>F9</vup>
+    <vdown>F8</vdown>
+  </player>
+  <player>
+    <class_name>QWidget</class_name>
+    <play>Space</play>
+    <stop>S</stop>
+    <full>F</full>
+    <fwd>Shift + Right</fwd>
+    <bwd>Shift + Left</bwd>
+    <mute>M</mute>
+    <vup>Control + Up</vup>
+    <vdown>Control + Down</vdown>
+  </player>
+  <player>
+    <class_name>HwndWrapper[DefaultDomain;;7dc6661b-3184-447c-a1ee-728b594fd30b]</class_name>
+    <play>
+    </play>
+    <stop>S</stop>
+    <full>V</full>
+    <fwd>Z</fwd>
+    <bwd>
+    </bwd>
+    <mute>
+    </mute>
+    <vup>
+    </vup>
+    <vdown>
+    </vdown>
+  </player>
+</item>

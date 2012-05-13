@@ -1,0 +1,5 @@
+C:\Users\Sandeep\Documents\Kinect\KMPC\Kinect.Toolbox\bin\Debug\Kinect.Toolbox.dll
+C:\Users\Sandeep\Documents\Kinect\KMPC\Kinect.Toolbox\bin\Debug\Kinect.Toolbox.pdb
+C:\Users\Sandeep\Documents\Kinect\KMPC\Kinect.Toolbox\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sandeep\Documents\Kinect\KMPC\Kinect.Toolbox\obj\Debug\Kinect.Toolbox.dll
+C:\Users\Sandeep\Documents\Kinect\KMPC\Kinect.Toolbox\obj\Debug\Kinect.Toolbox.pdb
