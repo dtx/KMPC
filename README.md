@@ -12,19 +12,14 @@ that can use a kinect camera to detect hand gestures and control the PC.
 
 
 Group members:
-*Darshan Sanghani (dsangha2@illinois.edu)
 
-*Sandeep Bhattaram (bhattar1@illinois.edu)
-
-*Yogesh Italia (italia1@illinois.edu)
-
-*Dawen Huang (dhuang22@illinois.edu)
-
-*Wanya Huang (huang139@illinois.edu)
-
-*Lik-heng Philip Chan (chan32@illinois.edu)
-
-*Cyrus Chan (chan15@illinois.edu)
+* Darshan Sanghani (dsangha2@illinois.edu)
+* Sandeep Bhattaram (bhattar1@illinois.edu)
+* Yogesh Italia (italia1@illinois.edu)
+* Dawen Huang (dhuang22@illinois.edu)
+* Wanya Huang (huang139@illinois.edu)
+* Lik-heng Philip Chan (chan32@illinois.edu)
+* Cyrus Chan (chan15@illinois.edu)
 
 
 
